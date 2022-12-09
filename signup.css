@@ -78,6 +78,7 @@ span {
   font-weight: bold;
 }
 
+/* form validation */
 small {
   text-align: left;
   justify-content: left;
@@ -103,4 +104,37 @@ small {
 #error-icon {
   color: #e74c3c;
   visibility: hidden;
+}
+
+/* Mobile view */
+@media (max-width: 400px) {
+  body {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  main {
+    max-width: 100%;
+  }
+  img {
+    width: 250px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  input {
+    width: 80%;
+  }
+  button {
+    width: 90%;
+  }
 }
