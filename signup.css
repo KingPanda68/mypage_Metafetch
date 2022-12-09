@@ -107,9 +107,9 @@ small {
 }
 
 /* Mobile view */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   body {
-    max-width: 100%;
+    max-width: 100vw;
     justify-content: center;
     text-align: center;
   }
@@ -123,12 +123,21 @@ small {
   main {
     max-width: 100%;
   }
+
   img {
     width: 250px;
   }
+
   h2 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  p {
+    text-align: center;
+    justify-content: center;
   }
 
   input {
