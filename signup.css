@@ -40,13 +40,14 @@ h2 {
 }
 
 input {
-  width: 440px;
+  width: 430px;
   height: 55px;
   border-radius: 15px;
   font-size: 20px;
   font-weight: 500;
   padding-left: 10px;
   margin-top: 20px;
+  margin-left: 10px;
   border: 1.414px solid #040507;
 }
 
@@ -75,4 +76,31 @@ button {
 span {
   font-size: 20px;
   font-weight: bold;
+}
+
+small {
+  text-align: left;
+  justify-content: left;
+}
+
+.form-control.error input {
+  border: 2px solid #e74c3c;
+}
+
+.form-control small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.error #error-icon {
+  visibility: visible;
+}
+
+#error-icon {
+  color: #e74c3c;
+  visibility: hidden;
 }

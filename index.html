@@ -24,17 +24,36 @@
     <main>
         <h2>Create an Account</h2>
         <p>Please enter your details</p>
-        <form action="">
-            <input type="text" id="username" placeholder="Username">
-            <br>
-            <input type="email" id="email" placeholder="Email Address">
-            <br>
-            <input type="password" id="password" placeholder="Password">
-            <i class="bi bi-eye-fill"></i>
-            <br>
-            <input type="password" id="password" placeholder="Confirm Password">
-            <i class="bi bi-eye-fill"></i>
-            <br>
+        <form action="" id="form">
+
+            <div class="form-control">
+                <input type="text" id="username" placeholder="Username">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email Address">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password2" placeholder="Confirm Password">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
             <button>Create an Account</button>
         </form>
 
@@ -47,6 +66,7 @@
     </main>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="validate.js" defer></script>
 </body>
 
 </html>
