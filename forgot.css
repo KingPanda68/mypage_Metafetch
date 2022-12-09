@@ -13,6 +13,16 @@ main {
   margin-top: 30px;
 }
 
+#right {
+  margin-left: 15%;
+}
+
+h1 {
+  width: 200px;
+  font-size: 50px;
+  margin-bottom: 24px;
+}
+
 #input_area {
   background-color: white;
   width: 400px;
@@ -28,6 +38,10 @@ input {
   border-style: none none solid none;
 }
 
+input:focus {
+  outline: none;
+}
+
 button {
   background-color: #507dbc;
   color: white;
@@ -37,4 +51,35 @@ button {
   border-radius: 6px;
   font-size: large;
   margin-top: 50px;
+}
+
+/* enter otp styling*/
+
+#otp-area {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.otp-field {
+  border: none;
+  background-color: rgb(235, 229, 229);
+  margin-left: 20px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+}
+
+.otp-field:focus {
+  outline: none;
+  border: 2px solid #507dbc;
+}
+
+/* reset password */
+
+#password {
+  margin-top: 0;
 }

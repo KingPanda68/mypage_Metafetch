@@ -5,7 +5,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-image: linear-gradient(rgb(80, 125, 188), rgb(218, 227, 229));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(80, 125, 188),
+    rgb(218, 227, 229)
+  );
+  height: 120vh;
+  max-height: 120vh;
 }
 
 header {
@@ -44,6 +50,11 @@ input {
   border: 1.414px solid #040507;
 }
 
+input:focus {
+  outline: none;
+  border: 3px solid #507dbc;
+}
+
 button {
   width: 450px;
   height: 55px;
@@ -58,4 +69,10 @@ button {
 #google {
   background: none;
   color: rgb(4, 5, 7);
+  border: 1.414px solid #040507;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot Password</title>
+    <title>Forgot Password - Enter OTP</title>
 
     <link rel="stylesheet" href="./forgot.css">
 
@@ -22,17 +22,23 @@
             <a href="index.html"><img src="./Assets/Images/Logo.png" alt="Logo" style="margin-top: 35%;"></a>
         </div>
 
-        <!-- right div containing the forgot password area -->
+        <!-- right div containing the enter otp area -->
         <div id="right">
-            <h1>Forgot Password?</h1>
+            <h1>Enter OTP</h1>
 
             <!-- input area -->
             <div id="input_area">
-                <p>Don't worry, it happens. Please enter the email address associated to your account</p>
+                <p>A 4-digit code has been sent to your email</p>
+                <p style="margin-top: 16px;">Enter code</p>
                 <form action="">
-                    <input type="email" id="email" placeholder="Enter email address">
+                    <div id="otp-area">
+                        <input type="text" class="otp-field" maxlength="1">
+                        <input type="text" class="otp-field" maxlength="1">
+                        <input type="text" class="otp-field" maxlength="1">
+                        <input type="text" class="otp-field" maxlength="1">
+                    </div>
                     <br>
-                    <a href="forgot2.html"><button>Submit</button></a>
+                    <a href="forgot3.html"><button>Submit</button></a>
                 </form>
             </div>
         </div>
